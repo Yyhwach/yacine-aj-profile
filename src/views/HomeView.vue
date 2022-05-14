@@ -7,3 +7,12 @@ import TheWelcome from '@/components/TheWelcome.vue'
     <TheWelcome />
   </main>
 </template>
+
+<style scoped lang="scss">
+  main:after {
+    content: "Yassdefzefzezfezfzefzefez";
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+  }
+</style>

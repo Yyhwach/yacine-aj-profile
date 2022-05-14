@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <div class="hero is-primary">
-    <div class="hero-body has-text-centered">
-      <h1 class="title">Yacine Ajouaou</h1> 
-    </div>
-  </div>
+  <header>
+    <Navbar />
+  </header>
   <RouterView />
 </template>
 

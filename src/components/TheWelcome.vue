@@ -12,13 +12,34 @@
 </script>
 
 <template>
-  <div class="columns">
-    <div class="column is-5 is-offset-7 ">
-      <div class="columns is-multiline">
-        <div class="column is-5" v-for="(video, index) in state.videos" :key="index">
-          <VideoPreviewVue :video="video"/>
+  <div class="hero banner is-primary">
+    <div class="columns">
+      <div class="column is-5 is-offset-7 ">
+        <div class="columns is-multiline">
+          <div class="column is-5" v-for="(video, index) in state.videos" :key="index">
+            <VideoPreviewVue :video="video"/>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="hero subbanner">
+    <div class="columns">
+      <div class="column is-6 has-background-grey"></div>
+      <div class="column is-6 has-background-grey-light"></div>
+    </div>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+  .hero {
+    &.banner {
+      background-color: #FFC884;
+      height: calc(60vh - 25px);
+    }
+    &.subbanner {
+      background-color: white;
+      height: calc(40vh - 25px);
+    }
+  }
+</style>
